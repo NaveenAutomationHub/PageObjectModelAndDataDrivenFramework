@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.crm.qa.util.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.qa.tests.ContactsPageTest">
+        <methods>
+          <include name="selectContactsByNameTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.ContactsPageTest -->
+      <class name="com.crm.qa.tests.DocPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="docPageTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.crm.qa.tests.DocPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

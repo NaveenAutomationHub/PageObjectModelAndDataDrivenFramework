@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" >
+
+      <listeners>
+		<listener class-name="com.crm.qa.util.ExtentReporterNG" />
+	</listeners>
+
+
+  <test thread-count="2" name="Test">
+  
+  <parameter name="url" value="https://www.freecrm.com/index.html"/>
+    <parameter name="username" value="naveendommata"/>
+      <parameter name="password" value="Welcome@123"/>
+      
+        <packages>
+            
+			<package name="com.qa.testng.practice" />
+			
+		</packages>
+  
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
