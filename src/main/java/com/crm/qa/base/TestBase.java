@@ -35,7 +35,7 @@ public class TestBase {
 		
 		}
 
-	public  void initialization() {
+	public void initialization() {
 		
 		String browserType = prop.getProperty("browser");
 		if(browserType.equalsIgnoreCase("firefox")){

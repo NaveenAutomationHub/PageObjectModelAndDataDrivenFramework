@@ -42,6 +42,12 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//*[@id='navmenu']/ul/li[14]/ul/li/a")
 	public WebElement newFormLink;
 	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[8]/a")
+	public WebElement CallLink;
+	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[8]/ul/li[1]/a")
+	public WebElement NewCallLink;
+	
 	
    public HomePage(){
 		
@@ -115,6 +121,21 @@ public class HomePage extends TestBase{
 	   
 	   
    }
+   
+   
+   public NewCallPage ClickOnNewCallLink() throws InterruptedException{
+	   
+	   Actions actions = new Actions(driver);
+		
+		actions.moveToElement(CallLink).build().perform();
+		
+		Thread.sleep(1000);
+		
+		actions.moveToElement(NewCallLink).click().build().perform();
+		
+		return new NewCallPage();
+   }
+
 	
    
 	

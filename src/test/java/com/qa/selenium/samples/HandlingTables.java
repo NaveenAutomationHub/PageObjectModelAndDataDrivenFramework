@@ -16,10 +16,13 @@ public class HandlingTables {
 		//driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
 		driver.get("http://toolsqa.com/automation-practice-table/");
 		
+		driver.manage().window().maximize();
+		
 		List<WebElement> list1 = driver.findElements(By.xpath("//*[@id='content']/table/tbody/tr/td[1]"));
 		List<WebElement> list2 = driver.findElements(By.xpath("//*[@id='content']/table/tbody/tr/td[5]"));
+		List<WebElement> list3 = driver.findElements(By.xpath("//*[@id='content']/table/tbody/tr/td[6]/a"));
+		//
 		/*
-		
 		for(WebElement a: list1){
 			
 			//System.out.println(a.getText());
@@ -35,19 +38,14 @@ public class HandlingTables {
 			
 		}
 	*/
-		
-		
-	
-		
 		for(int i=0;i<list1.size();i++){
 			
 			if(list1.get(i).getText().equals("Saudi Arabia")){
 				
 				System.out.println(list2.get(i).getText());
+				list3.get(i).click();
 			}
-			
 		}
-		
 		
 	}
 
