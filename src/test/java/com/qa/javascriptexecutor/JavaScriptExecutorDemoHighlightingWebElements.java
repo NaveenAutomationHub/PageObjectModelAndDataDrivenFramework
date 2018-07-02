@@ -40,7 +40,7 @@ public class JavaScriptExecutorDemoHighlightingWebElements {
 
 	public static void flash(WebElement element, WebDriver driver) {
 		
-		JavascriptExecutor js =((JavascriptExecutor)driver);
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
 		String bgColor = element.getCssValue("backgroundColor");
 		for(int i=0;i<=1;i++){
 			

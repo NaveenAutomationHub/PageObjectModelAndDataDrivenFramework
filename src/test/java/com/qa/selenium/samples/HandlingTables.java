@@ -21,6 +21,9 @@ public class HandlingTables {
 		List<WebElement> list1 = driver.findElements(By.xpath("//*[@id='content']/table/tbody/tr/td[1]"));
 		List<WebElement> list2 = driver.findElements(By.xpath("//*[@id='content']/table/tbody/tr/td[5]"));
 		List<WebElement> list3 = driver.findElements(By.xpath("//*[@id='content']/table/tbody/tr/td[6]/a"));
+		
+		// driver.navigate().refresh();
+		
 		//
 		/*
 		for(WebElement a: list1){

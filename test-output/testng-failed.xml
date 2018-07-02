@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.javascriptexecutor.HowToScollIntoView">
+      <class name="com.crm.qa.tests.CombinedFormTest">
         <methods>
-          <include name="howToScollIntoView"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="feedbackFormPageTest"/>
         </methods>
-      </class> <!-- com.qa.javascriptexecutor.HowToScollIntoView -->
+      </class> <!-- com.crm.qa.tests.CombinedFormTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

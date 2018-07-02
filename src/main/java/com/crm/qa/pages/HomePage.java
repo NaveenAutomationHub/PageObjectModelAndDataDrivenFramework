@@ -48,6 +48,15 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//*[@id='navmenu']/ul/li[8]/ul/li[1]/a")
 	public WebElement NewCallLink;
 	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[15]/a")
+	public WebElement reportLink;
+	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[3]/a")
+	public WebElement comapnieslink;
+	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[3]/ul/li[2]/a")
+	public WebElement combinedForm;
+	
 	
    public HomePage(){
 		
@@ -134,6 +143,27 @@ public class HomePage extends TestBase{
 		actions.moveToElement(NewCallLink).click().build().perform();
 		
 		return new NewCallPage();
+   }
+   
+   public void ReportsLink(){
+	   
+	   reportLink.click();
+	      
+	  
+   }
+   
+   public CompaniesPage combinedLink() throws InterruptedException{
+	   
+	   Actions actions = new Actions(driver);
+		
+		actions.moveToElement(comapnieslink).build().perform();
+		
+		Thread.sleep(5000);
+		
+		actions.moveToElement(combinedForm).click().build().perform();
+		
+		return new CompaniesPage();
+		
    }
 
 	

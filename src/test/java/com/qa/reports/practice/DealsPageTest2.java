@@ -22,8 +22,6 @@ import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
 import com.qa.reports.practice.Utility;
 
-
-
 public class DealsPageTest2 extends TestBase{
 	
 	LoginPage loginpage;
@@ -33,8 +31,6 @@ public class DealsPageTest2 extends TestBase{
 	TestUtil testutil;
 	ExtentReports extent;
 	ExtentTest logger;
-	
-	
 	
 	public DealsPageTest2(){
 		super();
@@ -76,19 +72,11 @@ public class DealsPageTest2 extends TestBase{
 		dealspage = homepage.goToNewDeal();
 		dealspage.newdealsdetails();
 		
-		
 	}
 	
-	
-	
-
-
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException 
 	{
-		
-		
-		
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
 			String temp=Utility.getScreenshot(driver);
@@ -101,8 +89,6 @@ public class DealsPageTest2 extends TestBase{
 			
 			logger.pass(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}
-		
-		
 		
 		extent.flush();
 		driver.quit();
