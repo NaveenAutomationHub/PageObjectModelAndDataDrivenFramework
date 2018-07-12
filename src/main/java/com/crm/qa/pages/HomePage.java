@@ -1,15 +1,11 @@
 package com.crm.qa.pages;
-
-
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 import com.crm.qa.base.TestBase;
-
-
 
 public class HomePage extends TestBase{
 	
@@ -56,6 +52,15 @@ public class HomePage extends TestBase{
 	
 	@FindBy(xpath="//*[@id='navmenu']/ul/li[3]/ul/li[2]/a")
 	public WebElement combinedForm;
+	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[3]/ul/li[3]/a")
+	public WebElement fullForm;
+	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[12]/a")
+	public WebElement campaignLink;
+	
+	@FindBy(xpath="//*[@id='navmenu']/ul/li[12]/ul/li[5]/a")
+	public WebElement smsCampaigns;
 	
 	
    public HomePage(){
@@ -164,6 +169,31 @@ public class HomePage extends TestBase{
 		
 		return new CompaniesPage();
 		
+   }
+   
+   
+   public FullFormPage gotoFullFormPage() throws InterruptedException{
+	   Actions actions = new Actions(driver);
+	   
+	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		actions.moveToElement(comapnieslink).build().perform();
+		
+		Thread.sleep(5000);
+		
+           actions.moveToElement(fullForm).click().build().perform();
+		
+		return new FullFormPage();
+		
+   }
+   
+   public void gotoCampaignspages() throws InterruptedException {   
+      Actions actions = new Actions(driver);   
+	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		actions.moveToElement(campaignLink).build().perform();	
+		Thread.sleep(5000);
+		actions.moveToElement(smsCampaigns).click().build().perform();
+		  
+	  
    }
 
 	

@@ -15,7 +15,7 @@ public class Utility {
 	public static void initialization(){
 		
 		driver=new FirefoxDriver();
-		driver.get("https://www.geeksforgeeks.org");
+		driver.get("https://www.techonthenet.com/");
 	}
 	
 	

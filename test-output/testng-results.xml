@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24623" started-at="2018-07-02T07:53:41Z" finished-at="2018-07-02T07:54:06Z">
+  <suite name="Default suite" duration-ms="20740" started-at="2018-07-12T13:36:36Z" finished-at="2018-07-12T13:36:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24623" started-at="2018-07-02T07:53:41Z" finished-at="2018-07-02T07:54:06Z">
-      <class name="com.crm.qa.tests.CombinedFormTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.CombinedFormTest@462d5aee]" name="setUp" is-config="true" duration-ms="15938" started-at="2018-07-02T07:53:41Z" finished-at="2018-07-02T07:53:57Z">
+    <test name="Default test" duration-ms="20740" started-at="2018-07-12T13:36:36Z" finished-at="2018-07-12T13:36:57Z">
+      <class name="com.crm.qa.tests.CampaignsTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.CampaignsTest@462d5aee]" name="setUp" is-config="true" duration-ms="15457" started-at="2018-07-12T13:36:36Z" finished-at="2018-07-12T13:36:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="feedbackFormPageTest()[pri:0, instance:com.crm.qa.tests.CombinedFormTest@462d5aee]" name="feedbackFormPageTest" duration-ms="8669" started-at="2018-07-02T07:53:57Z" finished-at="2018-07-02T07:54:06Z">
+        <test-method status="PASS" signature="compaignsTest()[pri:0, instance:com.crm.qa.tests.CampaignsTest@462d5aee]" name="compaignsTest" duration-ms="5266" started-at="2018-07-12T13:36:52Z" finished-at="2018-07-12T13:36:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feedbackFormPageTest -->
-      </class> <!-- com.crm.qa.tests.CombinedFormTest -->
+        </test-method> <!-- compaignsTest -->
+      </class> <!-- com.crm.qa.tests.CampaignsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
