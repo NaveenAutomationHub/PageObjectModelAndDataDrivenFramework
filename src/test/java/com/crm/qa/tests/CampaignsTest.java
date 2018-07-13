@@ -44,4 +44,13 @@ public class CampaignsTest extends TestBase{
 		System.out.println("test passed");	
 	}
 	
+	/*@Test
+	public void handlningDynamically() {
+		
+		homepage.selectingDynamically();
+		System.out.println("test passed");	
+	}*/
+	
+	
+	
 }

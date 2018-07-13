@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.tests.CampaignsTest">
+      <class name="com.qa.selenium.samples.DynamicSearch">
         <methods>
-          <include name="setUp"/>
-          <include name="compaignsTest"/>
+          <include name="JavaSearch"/>
         </methods>
-      </class> <!-- com.crm.qa.tests.CampaignsTest -->
+      </class> <!-- com.qa.selenium.samples.DynamicSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

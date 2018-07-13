@@ -46,7 +46,7 @@ public class ContactsPageTest extends TestBase{
 		@Test(priority=2)
 		public void selectContactsByNameTest(){
 			
-			contactspage.selectContactsByName("Naveen Kommuri");
+			contactspage.selectContactsByName("naveen a");
 		}
 		
 		@AfterMethod

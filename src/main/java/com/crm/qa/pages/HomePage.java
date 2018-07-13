@@ -1,5 +1,7 @@
 package com.crm.qa.pages;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -192,8 +194,29 @@ public class HomePage extends TestBase{
 		actions.moveToElement(campaignLink).build().perform();	
 		Thread.sleep(5000);
 		actions.moveToElement(smsCampaigns).click().build().perform();
-		  
-	  
+		
+   }
+   
+   public void selectingDynamically(){
+	   
+	   Actions actions = new Actions(driver);   
+	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		actions.moveToElement(campaignLink).build().perform();	
+		
+		String before_Path= "//*[@id='navmenu']/ul/li[12]/ul/li[";
+		String after_Path = "]/a";
+		
+		for(int i=1;i<=10;i++){
+			
+			String fullpath = driver.findElement(By.xpath(before_Path + i + after_Path)).getText();
+			WebElement wb = driver.findElement(By.xpath(before_Path + i + after_Path));
+			
+			if(fullpath.equals("after_Path")){
+				Actions action = new Actions(driver);   
+				action.moveToElement(wb).click();
+				//driver.findElement(By.xpath("//*[@id='navmenu']/ul/li[12]/ul/li["+i+"]/a")).click();
+			}
+		}
    }
 
 	

@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20740" started-at="2018-07-12T13:36:36Z" finished-at="2018-07-12T13:36:57Z">
+  <suite name="Default suite" duration-ms="12338" started-at="2018-07-13T10:20:59Z" finished-at="2018-07-13T10:21:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20740" started-at="2018-07-12T13:36:36Z" finished-at="2018-07-12T13:36:57Z">
-      <class name="com.crm.qa.tests.CampaignsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.CampaignsTest@462d5aee]" name="setUp" is-config="true" duration-ms="15457" started-at="2018-07-12T13:36:36Z" finished-at="2018-07-12T13:36:52Z">
+    <test name="Default test" duration-ms="12338" started-at="2018-07-13T10:20:59Z" finished-at="2018-07-13T10:21:11Z">
+      <class name="com.qa.selenium.samples.DynamicSearch">
+        <test-method status="PASS" signature="JavaSearch()[pri:0, instance:com.qa.selenium.samples.DynamicSearch@4d3167f4]" name="JavaSearch" duration-ms="12323" started-at="2018-07-13T10:20:59Z" finished-at="2018-07-13T10:21:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="compaignsTest()[pri:0, instance:com.crm.qa.tests.CampaignsTest@462d5aee]" name="compaignsTest" duration-ms="5266" started-at="2018-07-12T13:36:52Z" finished-at="2018-07-12T13:36:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compaignsTest -->
-      </class> <!-- com.crm.qa.tests.CampaignsTest -->
+        </test-method> <!-- JavaSearch -->
+      </class> <!-- com.qa.selenium.samples.DynamicSearch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
