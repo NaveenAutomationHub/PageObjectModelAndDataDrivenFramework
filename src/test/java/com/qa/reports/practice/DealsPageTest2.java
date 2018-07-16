@@ -79,13 +79,13 @@ public class DealsPageTest2 extends TestBase{
 	{
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
-			String temp=Utility.getScreenshot(driver);
+			String temp= Utility.getScreenshot(driver);
 			
 			logger.fail(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 			
 		}else if(result.getStatus()==ITestResult.SUCCESS){
 			
-              String temp=Utility.getScreenshot(driver);
+              String temp= Utility.getScreenshot(driver);
 			
 			logger.pass(result.getThrowable().getMessage(), MediaEntityBuilder.createScreenCaptureFromPath(temp).build());
 		}

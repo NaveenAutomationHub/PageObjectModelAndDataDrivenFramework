@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.selenium.samples.DynamicSearch">
+      <class name="com.qa.screenshots.SampleTest">
         <methods>
-          <include name="JavaSearch"/>
+          <include name="ScreenshotTest"/>
+          <include name="ScreenshotTest1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.qa.selenium.samples.DynamicSearch -->
+      </class> <!-- com.qa.screenshots.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
