@@ -36,7 +36,7 @@ public class PracticeSwitchWindow {
 	    System.out.println(str1);
 	    System.out.println(str2);
 	    
-	    driver.switchTo().window(str1);
+	    //driver.switchTo().window(str1);
 	      
 	     WebElement element2 = driver.findElement(By.xpath("//*[@id='content']/p[3]/button"));
 	     element2.click();

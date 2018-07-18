@@ -1,8 +1,6 @@
 package com.qa.reports.practice.multipleclasses;
 
-import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -16,14 +14,13 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.qa.reports.practice.GetScreenShot;
+
 
 public class BaseTest
 {
     public static ExtentHtmlReporter htmlReporter;
     public static ExtentReports extent;
     public static ExtentTest test;
-    public static WebDriver driver;
      
     @BeforeSuite
     public void setUp()
@@ -45,16 +42,12 @@ public class BaseTest
     }
      
     @AfterMethod
-    public void getResult(ITestResult result) throws IOException
+    public void getResult(ITestResult result)
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
             test.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
             test.fail(result.getThrowable());
-            String screenShotPath = GetScreenShot.getScreenshot(driver);
-            test.fail(MarkupHelper.createLabel(result.getName() +" Test Case Failed", ExtentColor.RED));
-            test.fail(result.getThrowable());
-            test.fail("SnapShot below: "+test.addScreenCaptureFromPath(screenShotPath));
         }
         else if(result.getStatus() == ITestResult.SUCCESS)
         {

@@ -9,23 +9,17 @@ import org.testng.annotations.Test;
 public class AlertsHandle {
 	@Test
 	public void handlingAlerts() throws InterruptedException {
-		
 		WebDriver d = new FirefoxDriver();
 		d.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		d.manage().window().maximize();
 		d.findElement(By.name("proceed")).click();
 		Alert a =d.switchTo().alert();
 		System.out.println("text on the window is : "+ a.getText());
-		
 		Thread.sleep(5000);
-		
 		//a.accept();
+		a.dismiss();
+		d.findElement(By.xpath("html/body/div[1]/div[1]/div[2]/a")).click();
 		//d.close();
-		d.switchTo().defaultContent();
 		
-		
-}
-	
-	
-	
+}	
 }

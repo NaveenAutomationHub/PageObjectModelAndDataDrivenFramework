@@ -30,24 +30,24 @@ public class FindingAllTheLinks {
 		
 		System.out.println(str);
 		
-		/*List<WebElement> list =d.findElements(By.tagName("a"));
+		List<WebElement> list =d.findElements(By.tagName("a"));
 		
 		for(WebElement l:list){
 			
 			System.out.println(l.getAttribute("href"));
 		}
-		*/
 		
 		
 		
-		/*for(int i=0;i<list.size();i++){
+		
+		for(int i=0;i<list.size();i++){
 			
 			if(list.get(i).isEnabled()){
 				
-				System.out.println(list.get(i).getText());
+				System.out.println(list.get(i).getAttribute("href"));
 			}
 			
-		}*/
+		}
 		
 		
 		//System.out.println(list.size());

@@ -17,7 +17,7 @@ public class HandlingAlerts {
 		d.manage().window().maximize();
 		d.findElement(By.id("searchBtn")).click();
 		Alert a =d.switchTo().alert();
-		a.getText();
+		System.out.println(a.getText());
 		a.accept();
 		d.findElement(By.id("fromPlaceName")).sendKeys("HYDERABAD");
 		d.findElement(By.id("toPlaceName")).sendKeys("BANGALORE");
