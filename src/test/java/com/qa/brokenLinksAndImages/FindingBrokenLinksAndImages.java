@@ -13,57 +13,52 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FindingBrokenLinksAndImages {
-	
+
 	// Naveen Automation
 
-	
-	public static void main(String[] args) throws MalformedURLException, IOException 
-	{
-		WebDriver driver=new FirefoxDriver();
-		
-		driver.manage().window().maximize();
-		
-		driver.get("https://www.freecrm.com/index.html");
-		
-		List<WebElement> links=driver.findElements(By.tagName("a"));
-		
-		links.addAll(driver.findElements(By.tagName("img")));
-		
-		System.out.println("Total links are "+links.size());
-		
-		List<WebElement> activeLinks = new ArrayList<WebElement>();
-		
-		for(int i=0;i<links.size();i++)
-		{
-			
-			System.out.println(links.get(i).getAttribute("href"));
-			
+	public static void main(String[] args) throws MalformedURLException, IOException {
+		WebDriver driver = new FirefoxDriver();
 
-if(links.get(i).getAttribute("href")!=null && (!links.get(i).getAttribute("href").contains("help"))){
-	
-	activeLinks.add(links.get(i));
-	
-   }
-}
-	System.out.println("size of active links is"+activeLinks.size() );	
-	
-	// 200 - OK
-	//404 -not found
-	//500 --internal error
-	//400 --bad request
-	
-	for(int j=0; j<activeLinks.size();j++){
-		
-		 HttpURLConnection httpURLConnect=(HttpURLConnection) new URL(activeLinks.get(j).getAttribute("href")).openConnection();
-		 
-		 httpURLConnect.connect();
-		 String response = httpURLConnect.getResponseMessage();
-		 httpURLConnect.disconnect();
-		 
-		 System.out.println(activeLinks.get(j).getAttribute("href")+"--->"+response );
-	}
-	
-		
-		
+		driver.manage().window().maximize();
+
+		driver.get("https://www.freecrm.com/index.html");
+
+		List<WebElement> links = driver.findElements(By.tagName("a"));
+
+		links.addAll(driver.findElements(By.tagName("img")));
+
+		System.out.println("Total links are " + links.size());
+
+		List<WebElement> activeLinks = new ArrayList<WebElement>();
+
+		for (int i = 0; i < links.size(); i++) {
+
+			System.out.println(links.get(i).getAttribute("href"));
+
+			if (links.get(i).getAttribute("href") != null && (!links.get(i).getAttribute("href").contains("help"))) {
+
+				activeLinks.add(links.get(i));
+
+			}
+		}
+		System.out.println("size of active links is" + activeLinks.size());
+
+		// 200 - OK
+		// 404 -not found
+		// 500 --internal error
+		// 400 --bad request
+
+		for (int j = 0; j < activeLinks.size(); j++) {
+
+			HttpURLConnection httpURLConnect = (HttpURLConnection) new URL(activeLinks.get(j).getAttribute("href"))
+					.openConnection();
+
+			httpURLConnect.connect();
+			String response = httpURLConnect.getResponseMessage();
+			httpURLConnect.disconnect();
+
+			System.out.println(activeLinks.get(j).getAttribute("href") + "--->" + response);
+		}
+
 	}
 }

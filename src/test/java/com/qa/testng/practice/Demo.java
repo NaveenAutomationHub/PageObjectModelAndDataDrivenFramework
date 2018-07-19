@@ -20,14 +20,10 @@ public class Demo {
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
 		driver.findElement(By.xpath("//*[@id='loginForm']/div/input[1]")).sendKeys(username);
 		driver.findElement(By.xpath("//*[@type='password']")).sendKeys(password);
 		driver.findElement(By.xpath("//*[@type='submit']")).submit();
-		
 		String str = driver.getTitle();
-		System.out.println(str);
-		
-		
+		System.out.println(str);	
   }
 }
