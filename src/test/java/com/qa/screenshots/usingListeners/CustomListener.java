@@ -1,4 +1,4 @@
-package com.qa.screenshots;
+package com.qa.screenshots.usingListeners;
 
 import org.testng.ITestContext;
 import org.testng.ITestListener;

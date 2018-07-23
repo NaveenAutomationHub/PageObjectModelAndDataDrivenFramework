@@ -1,4 +1,4 @@
-package com.qa.screenshots;
+package com.qa.screenshots.usingListeners;
 
 import java.io.File;
 
@@ -24,7 +24,7 @@ public class Utility {
 		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try{
 			
-			FileUtils.copyFile(file, new File("E://Eclipse workspaces//TaskManagement//PageObjectModelAndDataDrivenFramework//src//test//java//com//qa//screenshots "+" failedshot_"+testMethodName+"_"+".jpg"));
+			FileUtils.copyFile(file, new File("E://Eclipse workspaces//TaskManagement//PageObjectModelAndDataDrivenFramework//screenshots "+" failedshot_"+testMethodName+"_"+".jpg"));
 		}catch(Exception e){
 			
 			e.printStackTrace();

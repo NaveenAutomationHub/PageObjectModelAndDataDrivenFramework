@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,8 +21,13 @@ public class FindingBrokenLinksAndImages {
 		WebDriver driver = new FirefoxDriver();
 
 		driver.manage().window().maximize();
-
-		driver.get("https://www.freecrm.com/index.html");
+		driver.get("https://www.freecrm.com/index.html?e=2");
+		//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.xpath("//*[@id='loginForm']/div/input[1]")).sendKeys("naveendommata");
+		driver.findElement(By.xpath("//*[@type='password']")).sendKeys("Welcome@123");
+		driver.findElement(By.xpath("//*[@type='submit']")).submit();
+		driver.switchTo().frame("mainpanel");
+		
 
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 
@@ -35,7 +41,7 @@ public class FindingBrokenLinksAndImages {
 
 			System.out.println(links.get(i).getAttribute("href"));
 
-			if (links.get(i).getAttribute("href") != null && (!links.get(i).getAttribute("href").contains("help"))) {
+			if (links.get(i).getAttribute("href") != null && (!links.get(i).getAttribute("href").contains("javascript"))) {
 
 				activeLinks.add(links.get(i));
 
@@ -58,6 +64,8 @@ public class FindingBrokenLinksAndImages {
 			httpURLConnect.disconnect();
 
 			System.out.println(activeLinks.get(j).getAttribute("href") + "--->" + response);
+			
+			
 		}
 
 	}

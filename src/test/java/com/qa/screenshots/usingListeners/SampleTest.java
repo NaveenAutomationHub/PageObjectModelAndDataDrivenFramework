@@ -1,4 +1,4 @@
-package com.qa.screenshots;
+package com.qa.screenshots.usingListeners;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +15,6 @@ public class SampleTest extends Utility {
 		
 	}
 
-
 	@Test
 	public void ScreenshotTest(){
 		Assert.assertEquals(false, true);
@@ -27,9 +26,6 @@ public class SampleTest extends Utility {
 		Assert.assertEquals(false, true);
 		
 	}
-	
-	
-	
 	
 	@AfterMethod
 	public void tearDown(){
