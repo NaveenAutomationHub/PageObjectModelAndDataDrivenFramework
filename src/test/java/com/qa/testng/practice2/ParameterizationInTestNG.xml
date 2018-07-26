@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+   <test thread-count="5" name="ParameterizationInTestNG">
+   
+   <parameter name="url" value="https://www.freecrm.com/index.html"/>
+    <parameter name="username" value="naveendommata"/>
+      <parameter name="password" value="Welcome@123"/>
+      
+    <classes>
+      <class name="com.qa.testng.practice2.ParameterizationInTestNG"/>
+    </classes>
+  </test> <!-- ParameterizationInTestNG -->
+  
+</suite> <!-- Suite -->

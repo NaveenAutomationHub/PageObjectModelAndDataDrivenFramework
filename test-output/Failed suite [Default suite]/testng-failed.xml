@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
   <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="com.qa.testng.practice.Demo">
+      <class name="com.qa.testng.practice2.ParameterizationInTestNG">
         <methods>
           <include name="function"/>
         </methods>
-      </class> <!-- com.qa.testng.practice.Demo -->
+      </class> <!-- com.qa.testng.practice2.ParameterizationInTestNG -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->

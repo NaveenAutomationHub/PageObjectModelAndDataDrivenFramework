@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.screenshots.usingListeners.SampleTest">
+      <class name="com.qa.testng.practice2.DataDriven.CreateNewCompany">
         <methods>
-          <include name="ScreenshotTest"/>
-          <include name="ScreenshotTest1"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.qa.screenshots.usingListeners.SampleTest -->
+      </class> <!-- com.qa.testng.practice2.DataDriven.CreateNewCompany -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

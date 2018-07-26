@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="SanityGrouping">
+  
+  <groups>
+  <run>
+  <include name= "Sanity-group"/>
+   </run>
+    </groups>
+    
+    <classes>
+      <class name="com.qa.testng.practice2.Grouping"/>
+    </classes>
+  </test> <!-- SanityGrouping -->
+  
+  <test thread-count="5" name="RegressionGrouping">
+  
+  <groups>
+  <run>
+  <include name= "Regression-group"/>
+   </run>
+    </groups>
+    
+    <classes>
+      <class name="com.qa.testng.practice2.Grouping"/>
+    </classes>
+  </test> <!-- RegressionGrouping -->
+  
+  
+</suite> <!-- Suite -->

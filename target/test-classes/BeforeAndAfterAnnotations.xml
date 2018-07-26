@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="TestOne">
+    <classes>
+        <class name="BeforeAndAfterAnnotations">
+            <methods>
+            <include name="firstGroupMethodOne"/>
+            <include name="firstGroupMethodTwo"/>
+            </methods>
+        </class>           
+    </classes>
+  </test>
+  <test name="TesTwo">
+    <classes>
+        <class name="BeforeAndAfterAnnotations">
+            <methods>
+            <include name="secondGroupMethodOne"/>
+            <include name="secondGroupMethodTwo"/>
+            </methods>
+        </class>           
+    </classes>
+  </test></suite> <!-- Suite -->
