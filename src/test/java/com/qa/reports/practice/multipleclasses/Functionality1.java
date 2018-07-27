@@ -1,9 +1,6 @@
 package com.qa.reports.practice.multipleclasses;
-
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 public class Functionality1 extends BaseTest
 {
     @Test

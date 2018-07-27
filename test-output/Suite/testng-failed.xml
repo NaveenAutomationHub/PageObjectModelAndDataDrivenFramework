@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.retryLoginInSelenium.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="tests">
     <classes>
-      <class name="com.qa.reports.practice.multipleclasses.Functionality2">
+      <class name="com.qa.retryLoginInSelenium.MyTests">
         <methods>
-          <include name="getResult"/>
-          <include name="functionality2Test2"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
         </methods>
-      </class> <!-- com.qa.reports.practice.multipleclasses.Functionality2 -->
-      <class name="com.qa.reports.practice.multipleclasses.Functionality1">
-        <methods>
-          <include name="getResult"/>
-          <include name="functionality1Test2"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.reports.practice.multipleclasses.Functionality1 -->
+      </class> <!-- com.qa.retryLoginInSelenium.MyTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testng.practice2.DataDriven.CreateNewCompany">
+      <class name="com.qa.retryLoginInSelenium.MyTests">
         <methods>
-          <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
         </methods>
-      </class> <!-- com.qa.testng.practice2.DataDriven.CreateNewCompany -->
+      </class> <!-- com.qa.retryLoginInSelenium.MyTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

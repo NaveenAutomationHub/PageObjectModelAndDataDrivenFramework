@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.retryLoginInSelenium.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="tests">
     <classes>
-      <class name="com.qa.testng.practice2.DataDriven.CreateNewCompany">
+      <class name="com.qa.retryLoginInSelenium.MyTests">
         <methods>
-          <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="Test2"/>
+          <include name="Test1"/>
         </methods>
-      </class> <!-- com.qa.testng.practice2.DataDriven.CreateNewCompany -->
+      </class> <!-- com.qa.retryLoginInSelenium.MyTests -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
