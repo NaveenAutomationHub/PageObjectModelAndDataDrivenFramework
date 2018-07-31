@@ -3,3 +3,15 @@
 2018-07-23 18:58:14,874 - Google -INFO - Browser opened
 2018-07-23 18:58:18,649 - Google -INFO - navigated to free page
 2018-07-23 18:58:25,588 - Google -INFO - successfully logged into free CRM
+2018-07-31 12:56:36,263 - Google -INFO - Browser opened
+2018-07-31 12:56:39,425 - Google -INFO - navigated to free page
+2018-07-31 12:56:46,362 - Google -INFO - successfully logged into free CRM
+2018-07-31 13:01:04,213 - com.qa.log4j.GenerateLogs -INFO - Browser opened
+2018-07-31 13:01:10,601 - com.qa.log4j.GenerateLogs -INFO - navigated to free page
+2018-07-31 13:01:17,752 - com.qa.log4j.GenerateLogs -INFO - successfully logged into free CRM
+2018-07-31 13:18:45,071 - com.qa.log4j.DemoTest -INFO - Browser opened
+2018-07-31 13:18:51,869 - com.qa.log4j.DemoTest -INFO - navigated to free page
+2018-07-31 13:18:59,191 - com.qa.log4j.DemoTest -INFO - successfully logged into free CRM
+2018-07-31 13:20:28,672 - Google -INFO - Browser opened
+2018-07-31 13:20:34,791 - Google -INFO - navigated to free page
+2018-07-31 13:20:42,137 - Google -INFO - successfully logged into free CRM

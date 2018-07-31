@@ -5,12 +5,9 @@ import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 public class ScreenshotUsingRobot {
- 
 	public static void main(String[] args) throws Exception
 	{
 		 WebDriver driver=new FirefoxDriver();
@@ -18,7 +15,7 @@ public class ScreenshotUsingRobot {
 		 driver.get("https://www.redbus.in/"); 	
         BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
         ImageIO.write(image, "png", new File("Screenshot//redBus.png")); 
- 
+
 	}
  
 }

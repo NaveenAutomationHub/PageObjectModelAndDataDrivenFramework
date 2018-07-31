@@ -27,7 +27,7 @@ public class ExtentReportDemo2
 	@BeforeMethod
 	public void setup()
 	{
-	    ExtentHtmlReporter reporter=new ExtentHtmlReporter("./Reports/learn_automation2.html");
+	    ExtentHtmlReporter reporter=new ExtentHtmlReporter("./Reports/naveen-report.html");
 		
 	    extent = new ExtentReports();
 	    

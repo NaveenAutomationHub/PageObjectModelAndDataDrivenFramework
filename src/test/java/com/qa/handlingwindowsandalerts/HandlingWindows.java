@@ -26,16 +26,19 @@ public class HandlingWindows {
 		String childWindow1 = itr.next();
 		System.out.println(parentWindow);
 		System.out.println(childWindow1);
+		
 	//Thread.sleep(5000);
 		String childWindow2 = itr.next();
-		//Thread.sleep(5000);
+		System.out.println(childWindow2);
 		
-		//Thread.sleep(5000);
+		
 		String childWindow3 = itr.next();
 		d.switchTo().window(childWindow3);
 		d.close();
+		Thread.sleep(5000);
 		d.switchTo().window(childWindow2);
 		d.close();
+		Thread.sleep(5000);
 		d.switchTo().window(childWindow1);
 		d.close();
 		

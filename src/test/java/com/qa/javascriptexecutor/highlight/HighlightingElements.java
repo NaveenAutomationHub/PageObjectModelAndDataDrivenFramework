@@ -1,7 +1,4 @@
 package com.qa.javascriptexecutor.highlight;
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

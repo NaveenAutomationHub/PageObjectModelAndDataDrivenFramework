@@ -16,10 +16,10 @@ public class WaitingInSelenium {
 		d.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		d.manage().window().maximize();
 		
-		WebElement e = d.findElement(By.cssSelector("div.advertisement-area iframe"));
+		/*WebElement e = d.findElement(By.cssSelector("div.advertisement-area iframe"));
 		d.switchTo().frame(e);
-		d.findElement(By.xpath("//*[@id='map']/area[5]")).click();
-		
+		d.findElement(By.xpath("//*[@id='map']/area[5]")).click();*/
+		d.findElement(By.xpath("//a[contains(text(),'Disclaimer')]")).click();
 }
 	
 	

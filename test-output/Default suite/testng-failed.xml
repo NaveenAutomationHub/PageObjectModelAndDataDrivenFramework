@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.retryLoginInSelenium.MyTests">
+      <class name="com.qa.reports.practice.ExtentReportDemo2">
         <methods>
-          <include name="Test2"/>
-          <include name="Test1"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.qa.retryLoginInSelenium.MyTests -->
+      </class> <!-- com.qa.reports.practice.ExtentReportDemo2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
