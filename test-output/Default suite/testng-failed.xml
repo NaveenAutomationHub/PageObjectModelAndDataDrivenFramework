@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.reports.practice.ExtentReportDemo2">
+      <class name="com.qa.selenium.samples.ReadingDataDromTables">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="loginTest"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.qa.reports.practice.ExtentReportDemo2 -->
+      </class> <!-- com.qa.selenium.samples.ReadingDataDromTables -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

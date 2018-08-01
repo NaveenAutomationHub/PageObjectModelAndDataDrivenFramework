@@ -12,7 +12,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Demo {
-  @Test(invocationCount=2)
   @Parameters({"url","username","password"})
   public void function(String url, String username, String password) {
 	  
