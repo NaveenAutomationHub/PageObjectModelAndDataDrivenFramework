@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8367" started-at="2018-08-01T13:16:21Z" finished-at="2018-08-01T13:16:29Z">
+  <suite name="Default suite" duration-ms="31410" started-at="2018-08-07T08:56:58Z" finished-at="2018-08-07T08:57:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8367" started-at="2018-08-01T13:16:21Z" finished-at="2018-08-01T13:16:29Z">
-      <class name="com.qa.readDataFromTableIntoExcel.ReadingDataDromTables">
-        <test-method status="PASS" signature="test()[pri:0, instance:com.qa.readDataFromTableIntoExcel.ReadingDataDromTables@4d3167f4]" name="test" duration-ms="8352" started-at="2018-08-01T13:16:21Z" finished-at="2018-08-01T13:16:29Z">
+    <test name="Default test" duration-ms="31410" started-at="2018-08-07T08:56:58Z" finished-at="2018-08-07T08:57:29Z">
+      <class name="com.crm.qa.tests.CalendarTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.CalendarTest@69b0fd6f]" name="setUp" is-config="true" duration-ms="12484" started-at="2018-08-07T08:56:58Z" finished-at="2018-08-07T08:57:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.qa.readDataFromTableIntoExcel.ReadingDataDromTables -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="gotoCalendarWeekView()[pri:1, instance:com.crm.qa.tests.CalendarTest@69b0fd6f]" name="gotoCalendarWeekView" duration-ms="18912" started-at="2018-08-07T08:57:10Z" finished-at="2018-08-07T08:57:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoCalendarWeekView -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.tests.CalendarTest@69b0fd6f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-08-07T08:57:29Z" finished-at="2018-08-07T08:57:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.tests.CalendarTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

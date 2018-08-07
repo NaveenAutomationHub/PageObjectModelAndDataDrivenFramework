@@ -1,4 +1,4 @@
-/*package com.qa.java.collections;
+package com.qa.java.collections;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -9,7 +9,7 @@ public class HashSetDemo {
 	public static void main(String[] args) {
 
 
-		HashSet<Object> set = new HashSet<>();
+		HashSet<Object> set = new HashSet<Object>();
 
 		set.add("naveen");
 		set.add("Harisha");
@@ -25,4 +25,3 @@ public class HashSetDemo {
 	}
 
 }
-*/

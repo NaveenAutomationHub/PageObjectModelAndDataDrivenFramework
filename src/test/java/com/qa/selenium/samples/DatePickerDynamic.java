@@ -25,9 +25,7 @@ public class DatePickerDynamic {
 		driver.findElement(By.xpath("//*[@id='onward_cal']")).click();
 		Thread.sleep(5000);
 		List<WebElement> list = driver.findElements(By.xpath("//*[@id='rb-calendar_onward_cal']/table/tbody/tr/td"));
-
 		for (WebElement ele : list) {
-
 			String date1 = ele.getText();
 			if (date1.equals(todaydate)) {
 

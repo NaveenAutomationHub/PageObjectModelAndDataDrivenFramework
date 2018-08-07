@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.selenium.samples.ReadingDataDromTables">
+      <class name="com.crm.qa.tests.CalendarTest">
         <methods>
-          <include name="test"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="gotoCalendarWeekView"/>
         </methods>
-      </class> <!-- com.qa.selenium.samples.ReadingDataDromTables -->
+      </class> <!-- com.crm.qa.tests.CalendarTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

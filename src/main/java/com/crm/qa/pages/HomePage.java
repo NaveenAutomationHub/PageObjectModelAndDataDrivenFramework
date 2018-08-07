@@ -64,6 +64,12 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//*[@id='navmenu']/ul/li[12]/ul/li[5]/a")
 	public WebElement smsCampaigns;
 	
+	@FindBy(xpath="//a[contains(text(),'Calendar')]")
+	public WebElement CalendarLink;
+	
+	@FindBy(xpath="//a[contains(text(),'Week View')]")
+	public WebElement WeekView;
+	
 	
    public HomePage(){
 		
@@ -217,6 +223,16 @@ public class HomePage extends TestBase{
 				//driver.findElement(By.xpath("//*[@id='navmenu']/ul/li[12]/ul/li["+i+"]/a")).click();
 			}
 		}
+   }
+   
+   public CalendarPage gotoCalendarWeekView(){
+	   
+	   Actions actions = new Actions(driver);   
+	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		actions.moveToElement(CalendarLink).build().perform();
+		actions.moveToElement(WeekView).click().build().perform();
+		
+		return new CalendarPage();
    }
 
 	
