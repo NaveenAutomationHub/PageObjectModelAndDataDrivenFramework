@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class VerifyBrokenLinks {
-	// Mekesh Otwani
+	
 	public static void main(String[] args) {
 		WebDriver driver = new FirefoxDriver();
 

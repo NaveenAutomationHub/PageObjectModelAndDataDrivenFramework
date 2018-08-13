@@ -70,6 +70,9 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//a[contains(text(),'Week View')]")
 	public WebElement WeekView;
 	
+	@FindBy(xpath=".//*[@id='navbar-collapse']/ul/li[2]/a")
+	public WebElement signUp;
+	
 	
    public HomePage(){
 		
@@ -234,7 +237,11 @@ public class HomePage extends TestBase{
 		
 		return new CalendarPage();
    }
-
+public SignUpPage gotoSignUpPage(){
+	signUp.click();
+	return new SignUpPage();
+	
+}
 	
    
 	

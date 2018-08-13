@@ -22,7 +22,7 @@ public class RobotClass {
 			d.findElement(By.name("proceed")).click();
 			Alert a =d.switchTo().alert();
 			System.out.println("text on the window is : "+ a.getText());
-			Thread.sleep(5000);
+			//Thread.sleep(5000);
 			
 			BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
 		     ImageIO.write(image, "png", new File("Screenshot//reddif.png")); 

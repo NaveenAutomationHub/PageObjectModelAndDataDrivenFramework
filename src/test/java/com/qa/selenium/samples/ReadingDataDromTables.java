@@ -54,6 +54,7 @@ public class ReadingDataDromTables {
 			String actualpath_company= before_xpath_company+i+after_xpath_company;
 			String companyName = driver.findElement(By.xpath(actualpath_company)).getText();
 			System.out.println(companyName);
+		
 			reader.setCellData("TableData", "companyname", i, companyName);
 			
 			String actualpath_contact= before_xpath_contact+i+after_xpath_contact;

@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31410" started-at="2018-08-07T08:56:58Z" finished-at="2018-08-07T08:57:29Z">
+  <suite name="Default suite" duration-ms="43268" started-at="2018-08-13T08:12:18Z" finished-at="2018-08-13T08:13:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31410" started-at="2018-08-07T08:56:58Z" finished-at="2018-08-07T08:57:29Z">
-      <class name="com.crm.qa.tests.CalendarTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.CalendarTest@69b0fd6f]" name="setUp" is-config="true" duration-ms="12484" started-at="2018-08-07T08:56:58Z" finished-at="2018-08-07T08:57:10Z">
+    <test name="Default test" duration-ms="43268" started-at="2018-08-13T08:12:18Z" finished-at="2018-08-13T08:13:01Z">
+      <class name="com.crm.qa.tests.SignUpTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="setUp" is-config="true" duration-ms="12483" started-at="2018-08-13T08:12:18Z" finished-at="2018-08-13T08:12:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoCalendarWeekView()[pri:1, instance:com.crm.qa.tests.CalendarTest@69b0fd6f]" name="gotoCalendarWeekView" duration-ms="18912" started-at="2018-08-07T08:57:10Z" finished-at="2018-08-07T08:57:29Z">
+        <test-method status="PASS" signature="gotoSignUpPage()[pri:1, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="gotoSignUpPage" duration-ms="7302" started-at="2018-08-13T08:12:30Z" finished-at="2018-08-13T08:12:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoCalendarWeekView -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.tests.CalendarTest@69b0fd6f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-08-07T08:57:29Z" finished-at="2018-08-07T08:57:29Z">
+        </test-method> <!-- gotoSignUpPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-08-13T08:12:37Z" finished-at="2018-08-13T08:12:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.tests.CalendarTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="setUp" is-config="true" duration-ms="11847" started-at="2018-08-13T08:12:37Z" finished-at="2018-08-13T08:12:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="fillSignUpDetails()[pri:2, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="fillSignUpDetails" duration-ms="11614" started-at="2018-08-13T08:12:49Z" finished-at="2018-08-13T08:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillSignUpDetails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-08-13T08:13:01Z" finished-at="2018-08-13T08:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.tests.SignUpTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -12,7 +12,7 @@ public class DatePickerStatic {
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//*[@id='onward_cal']")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("//*[@id='rb-calendar_onward_cal']/table/tbody/tr[7]/td[6]")).click();
+		driver.findElement(By.xpath("//*[@id='rb-calendar_onward_cal']/table/tbody/tr[4]/td[3]")).click();
 		
 	}
 
