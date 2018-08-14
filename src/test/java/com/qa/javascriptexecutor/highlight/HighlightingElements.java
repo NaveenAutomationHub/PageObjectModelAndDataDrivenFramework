@@ -9,21 +9,17 @@ public class HighlightingElements {
 		WebDriver driver=new FirefoxDriver(); 
 		driver.manage().window().maximize();	 
 		driver.get("https://www.freecrm.com/index.html");	 
-		
 		// Inspect element
 		WebElement uname = driver.findElement(By.xpath("//*[@id='loginForm']/div/input[1]"));
 		// Call reuse method
 		highLightElement(driver,uname);
 		uname.sendKeys("naveendommata");
-		
 		WebElement pwd = driver.findElement(By.xpath("//*[@type='password']"));
 		highLightElement(driver,pwd);
 		pwd.sendKeys("Welcome@123");
-		
 		WebElement submit = driver.findElement(By.xpath("//*[@type='submit']"));
 		highLightElement(driver,submit);
 		submit.click();
-		
 		}
 		 
 		// Element highlighter code

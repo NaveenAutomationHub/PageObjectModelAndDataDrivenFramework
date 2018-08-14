@@ -1,37 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="2" total="8" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43268" started-at="2018-08-13T08:12:18Z" finished-at="2018-08-13T08:13:01Z">
+  <suite name="Suite" duration-ms="101" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43268" started-at="2018-08-13T08:12:18Z" finished-at="2018-08-13T08:13:01Z">
-      <class name="com.crm.qa.tests.SignUpTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="setUp" is-config="true" duration-ms="12483" started-at="2018-08-13T08:12:18Z" finished-at="2018-08-13T08:12:30Z">
+    <test name="Test" duration-ms="101" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+      <class name="com.qa.reports.practice.multipleclasses.Functionality1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="setUp" is-config="true" duration-ms="312" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="gotoSignUpPage()[pri:1, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="gotoSignUpPage" duration-ms="7302" started-at="2018-08-13T08:12:30Z" finished-at="2018-08-13T08:12:37Z">
+        <test-method status="PASS" signature="functionality1Test1()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="functionality1Test1" duration-ms="22" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoSignUpPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-08-13T08:12:37Z" finished-at="2018-08-13T08:12:37Z">
+        </test-method> <!-- functionality1Test1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="getResult" is-config="true" duration-ms="15" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality1Test1 status=SUCCESS method=Functionality1.functionality1Test1()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="functionality1Test2()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="functionality1Test2" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Dommata] but found [Naveen]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Dommata] but found [Naveen]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.reports.practice.multipleclasses.Functionality1.functionality1Test2(Functionality1.java:20)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- functionality1Test2 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="getResult" is-config="true" duration-ms="7" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality1Test2 status=FAILURE method=Functionality1.functionality1Test2()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="functionality1Test3()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="functionality1Test3" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- functionality1Test3 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="getResult" is-config="true" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality1Test3 status=SUCCESS method=Functionality1.functionality1Test3()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality1@612679d6]" name="tearDown" is-config="true" duration-ms="341" started-at="2018-08-13T09:36:34Z" finished-at="2018-08-13T09:36:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="setUp" is-config="true" duration-ms="11847" started-at="2018-08-13T08:12:37Z" finished-at="2018-08-13T08:12:49Z">
+      </class> <!-- com.qa.reports.practice.multipleclasses.Functionality1 -->
+      <class name="com.qa.reports.practice.multipleclasses.Functionality2">
+        <test-method status="PASS" signature="functionality2Test1()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a]" name="functionality2Test1" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="fillSignUpDetails()[pri:2, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="fillSignUpDetails" duration-ms="11614" started-at="2018-08-13T08:12:49Z" finished-at="2018-08-13T08:13:01Z">
+        </test-method> <!-- functionality2Test1 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a]" name="getResult" is-config="true" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality2Test1 status=SUCCESS method=Functionality2.functionality2Test1()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillSignUpDetails -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.tests.SignUpTest@66d1af89]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-08-13T08:13:01Z" finished-at="2018-08-13T08:13:01Z">
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="functionality2Test2()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a]" name="functionality2Test2" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Dommata] but found [Naveen]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Dommata] but found [Naveen]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.reports.practice.multipleclasses.Functionality2.functionality2Test2(Functionality2.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.tests.SignUpTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- functionality2Test2 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a]" name="getResult" is-config="true" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality2Test2 status=FAILURE method=Functionality2.functionality2Test2()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="functionality2Test3()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a]" name="functionality2Test3" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- functionality2Test3 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a]" name="getResult" is-config="true" duration-ms="1" started-at="2018-08-13T09:36:33Z" finished-at="2018-08-13T09:36:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=functionality2Test3 status=SUCCESS method=Functionality2.functionality2Test3()[pri:0, instance:com.qa.reports.practice.multipleclasses.Functionality2@11758f2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- com.qa.reports.practice.multipleclasses.Functionality2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

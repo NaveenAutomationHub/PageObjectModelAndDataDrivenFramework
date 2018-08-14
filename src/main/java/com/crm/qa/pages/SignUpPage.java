@@ -2,6 +2,7 @@ package com.crm.qa.pages;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -37,6 +38,8 @@ public class SignUpPage  extends TestBase{
 	public WebElement agree;
 	@FindBy(xpath="//*[@name='submitButton']")
 	public WebElement submit;
+	@FindBy(xpath="//*[@id='footer']/div/div/div[1]")
+	public WebElement element;
 	
 	
 	public SignUpPage(){
@@ -50,8 +53,9 @@ public class SignUpPage  extends TestBase{
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
 		Assert.assertEquals("https://www.freecrm.com/register/", url);
-		
-		
+		JavascriptExecutor je = (JavascriptExecutor) driver;
+		je.executeScript("arguments[0].scrollIntoView(true);",element);
+		System.out.println(element.getText());
 	}
 	public void fillSignUpDetails()
 	{
