@@ -8,7 +8,7 @@ public class HashSetDemo {
 		HashSet<Object> set = new HashSet<Object>();
 
 		set.add("naveen");
-		set.add("Harisha");
+		set.add("Har");
 		set.add("Reddy");
 		
 		//System.out.println(set);
