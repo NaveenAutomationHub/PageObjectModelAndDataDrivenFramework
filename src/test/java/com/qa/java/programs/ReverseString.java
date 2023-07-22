@@ -1,7 +1,7 @@
 package com.qa.java.programs;
 public class ReverseString {
 	public static void main(String[] args) {
-		String input= "Naveen Harisha";		
+		String input= "Naveen Ha";		
 		StringBuilder sb = new StringBuilder(input);
 		//sb.append(input);
 		StringBuilder str = sb.reverse();		
